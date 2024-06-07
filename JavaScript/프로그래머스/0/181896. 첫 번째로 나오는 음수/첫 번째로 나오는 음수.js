@@ -1,0 +1,1 @@
+const solution = arr => arr.findIndex(a => a < 0);
