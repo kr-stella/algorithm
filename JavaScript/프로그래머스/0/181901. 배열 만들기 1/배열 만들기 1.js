@@ -1,0 +1,1 @@
+const solution = (n, v) => new Array(Math.floor(n / v)).fill(v).map((a, i) => (i + 1) * a)
