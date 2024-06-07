@@ -1,0 +1,1 @@
+const solution = (str, m, c) => [...str].reduce((acc, cur, i) => (((i % m) + 1) === c) ? acc += cur : acc, "");
