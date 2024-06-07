@@ -1,0 +1,1 @@
+const solution = str => [...new Set(str.split(``))].join(``);
