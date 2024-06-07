@@ -1,0 +1,1 @@
+const solution = (str, parts) => parts.reduce((v, [s, e], i) => v += str[i].substring(s, e + 1), "");
