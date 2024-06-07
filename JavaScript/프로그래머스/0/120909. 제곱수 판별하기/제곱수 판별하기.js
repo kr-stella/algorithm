@@ -1,0 +1,1 @@
+const solution = v => Number.isInteger(Math.sqrt(v))? 1 : 2
