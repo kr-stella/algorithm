@@ -1,0 +1,1 @@
+const solution = (arr, v) => arr.map(a => v%2? a*v:a+v)
