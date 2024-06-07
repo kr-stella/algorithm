@@ -1,0 +1,1 @@
+const solution = (arr, v) => arr.slice(v - 1, arr.length);
