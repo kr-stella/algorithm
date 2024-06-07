@@ -1,0 +1,1 @@
+const solution = (v, arr) => [...arr].filter(a => !(a % v));
