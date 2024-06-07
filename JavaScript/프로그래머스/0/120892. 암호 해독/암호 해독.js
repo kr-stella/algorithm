@@ -1,0 +1,1 @@
+const solution = (c, code) => [...c].filter((v, i) => !((i+1) % code)).join("");
