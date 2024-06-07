@@ -1,0 +1,1 @@
+const solution = (v, n, m) => +!(v % n || v % m)
