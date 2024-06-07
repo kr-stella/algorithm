@@ -1,0 +1,1 @@
+const solution = (v, n) => v.substr(-n);
