@@ -1,0 +1,1 @@
+const solution = (a, b) => Math.max(a.toString() + b, b.toString() + a)
