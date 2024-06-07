@@ -1,0 +1,1 @@
+const solution = (board, k) => board.reduce((a, c, i) => a += c.reduce((acc, cur, j) => (i + j <= k)? acc += cur : acc, 0), 0);
