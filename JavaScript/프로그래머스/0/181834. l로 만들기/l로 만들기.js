@@ -1,0 +1,1 @@
+const solution = str => [...str].reduce((a, c) => (c.charCodeAt() < "l".charCodeAt())? a += "l": a += c, "");
