@@ -1,0 +1,1 @@
+const solution = (arr, finished) => arr.filter((v, i) => !finished[i]);
