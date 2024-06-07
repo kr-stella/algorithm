@@ -1,0 +1,1 @@
+const solution = v => [...v].map(a => Number(a)).reduce((a, c) => a + c, 0)
