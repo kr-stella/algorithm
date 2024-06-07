@@ -1,0 +1,1 @@
+const solution = (arr, n) => arr.reduce((a, c) => a <= n? a+=c:a, 0)
