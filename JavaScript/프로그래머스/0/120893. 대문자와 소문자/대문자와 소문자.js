@@ -1,0 +1,1 @@
+const solution = str => str.replace(/[a-zA-Z]/g, v => (v === v.toUpperCase()) ? v.toLowerCase():v.toUpperCase());
