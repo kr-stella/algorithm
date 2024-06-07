@@ -1,0 +1,1 @@
+const solution = arr => arr.reduce((a, c) => [...a, ...new Array(c).fill(c)], [])
