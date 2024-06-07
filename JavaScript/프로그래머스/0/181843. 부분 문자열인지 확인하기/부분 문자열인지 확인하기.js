@@ -1,0 +1,1 @@
+const solution = (str, v) => str.includes(v)? 1:0;
