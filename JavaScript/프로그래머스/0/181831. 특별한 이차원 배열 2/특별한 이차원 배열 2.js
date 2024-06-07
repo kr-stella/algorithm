@@ -1,0 +1,1 @@
+const solution = arr => arr.every((a, i) => a.every((b, j) => b === arr[j][i]))? 1:0
