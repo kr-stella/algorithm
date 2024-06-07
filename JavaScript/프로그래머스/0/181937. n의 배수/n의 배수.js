@@ -1,0 +1,1 @@
+const solution = (v, n) => !(v % n)? 1:0
