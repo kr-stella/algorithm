@@ -1,0 +1,1 @@
+const solution = str => str.split(`x`).filter(a => a).sort((a, b) => (a > b)? 1:-1);
