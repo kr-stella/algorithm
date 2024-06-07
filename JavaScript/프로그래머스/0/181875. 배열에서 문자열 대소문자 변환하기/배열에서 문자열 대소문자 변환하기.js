@@ -1,0 +1,1 @@
+const solution = arr => arr.map((v, i) => (i % 2)? v.toUpperCase():v.toLowerCase());
