@@ -1,0 +1,1 @@
+const solution = (str, v) => str.startsWith(v)? 1:0;
