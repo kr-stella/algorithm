@@ -1,0 +1,1 @@
+const solution = (str, arr) => arr.reduce((a, c) => a += str[c], "");
