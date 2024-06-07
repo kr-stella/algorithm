@@ -1,0 +1,1 @@
+const solution = (start, end) => new Array(end-start+1).fill(start).map((a, i) => a += i);
