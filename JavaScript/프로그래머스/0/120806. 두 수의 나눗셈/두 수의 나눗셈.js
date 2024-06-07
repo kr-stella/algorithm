@@ -1,0 +1,1 @@
+const solution = (n1, n2) => parseInt((n1 / n2) * 1000);
