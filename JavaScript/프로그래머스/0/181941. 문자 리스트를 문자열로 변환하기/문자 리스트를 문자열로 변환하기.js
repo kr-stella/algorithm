@@ -1,1 +1,1 @@
-const solution = arr => arr.join("");
+const solution = arr => arr.join(``);
