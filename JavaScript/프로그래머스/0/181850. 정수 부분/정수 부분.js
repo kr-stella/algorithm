@@ -1,0 +1,1 @@
+const solution = v => Math.floor(v);
