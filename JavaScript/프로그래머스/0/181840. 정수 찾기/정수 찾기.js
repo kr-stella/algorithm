@@ -1,0 +1,1 @@
+const solution = (arr, n) => arr.includes(n)? 1:0;
