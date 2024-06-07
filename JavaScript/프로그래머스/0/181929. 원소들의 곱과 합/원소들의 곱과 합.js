@@ -1,0 +1,1 @@
+const solution = (arr) => arr.reduce((a, c) => a + c, 0) ** 2 > arr.reduce((a, c) => a * c, 1)? 1:0;
