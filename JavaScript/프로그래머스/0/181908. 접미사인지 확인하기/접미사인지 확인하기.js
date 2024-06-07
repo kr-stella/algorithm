@@ -1,0 +1,1 @@
+const solution = (str, suf) => str.endsWith(suf)? 1:0;
