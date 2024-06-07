@@ -1,0 +1,1 @@
+const solution = (str, n) => str.split("").reduce((a, c) => a += c.repeat(n), "");
