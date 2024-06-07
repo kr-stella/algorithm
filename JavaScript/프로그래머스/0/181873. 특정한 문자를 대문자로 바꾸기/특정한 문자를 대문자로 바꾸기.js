@@ -1,0 +1,1 @@
+const solution = (str, v) => str.replaceAll(v, v.toUpperCase())
