@@ -1,0 +1,1 @@
+const solution = (s1, s2) => s1.reduce((a, c) => s2.some(v => v === c)? a+=1:a, 0);
