@@ -1,0 +1,1 @@
+const solution = (arr, k, s, l) => arr.map(a => +a.substr(s, l)).filter(a => a > k);
