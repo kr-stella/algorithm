@@ -1,0 +1,1 @@
+const solution = (str1, str2) => [...str1].reduce((a, c, i) => a += `${c}${str2[i]}`, ``)
