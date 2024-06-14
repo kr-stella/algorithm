@@ -1,0 +1,1 @@
+const solution = (v1, v2) => (parseInt(v1, 2) + parseInt(v2, 2)).toString(2)
