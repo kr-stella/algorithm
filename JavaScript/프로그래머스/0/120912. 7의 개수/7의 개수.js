@@ -1,0 +1,1 @@
+const solution = (arr) => [...arr.join(``)].filter(a => a === `7`).length;
