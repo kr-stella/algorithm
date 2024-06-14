@@ -1,0 +1,1 @@
+const solution = (str) => str.match(new RegExp(`[^abc]+`, `gi`)) || [`EMPTY`];
