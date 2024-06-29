@@ -1,0 +1,1 @@
+const solution = arr => new Array(10).fill(0).reduce((a, c, i) => !arr.includes(i)? a+=i:a, 0);
