@@ -1,0 +1,1 @@
+const solution = v => (v % [...v.toString()].reduce((a, c) => a + +c, 0))? false:true;
