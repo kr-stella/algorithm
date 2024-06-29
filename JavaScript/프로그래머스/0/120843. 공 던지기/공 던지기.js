@@ -1,0 +1,1 @@
+const solution = (arr, v) => arr[((v - 1) * 2) % arr.length];
