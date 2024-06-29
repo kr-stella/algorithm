@@ -1,6 +1,1 @@
-function solution(v){
-    
-    v = v.toLowerCase();
-    return [...v].filter(e => e === "p").length === [...v].filter(e => e === "y").length;
-    
-}
+const solution = v => ![...v.toLowerCase()].reduce((a, c) => (c === `p`)? a += 1: (c === `y`)? a -= 1:a, 0)? true:false;
