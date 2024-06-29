@@ -1,0 +1,1 @@
+const solution = (arr, signs) => arr.reduce((a, c, i) => a += signs[i]? c:-c, 0);
