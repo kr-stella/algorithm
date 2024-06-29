@@ -1,0 +1,1 @@
+const solution = (str, ow, n) => str.substr(0, n) + ow + str.substr(n + ow.length);
