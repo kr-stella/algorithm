@@ -1,0 +1,1 @@
+const solution = n => "수박".repeat(n).substr(0, n);
