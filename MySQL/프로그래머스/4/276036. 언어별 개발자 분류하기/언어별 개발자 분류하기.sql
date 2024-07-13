@@ -1,0 +1,24 @@
+SELECT RESULT.GRADE, RESULT.ID, RESULT.EMAIL
+FROM (
+    SELECT ID, EMAIL, CASE
+        WHEN ((SKILL_CODE & (
+            SELECT SUM(CODE) FROM SKILLCODES
+            WHERE CATEGORY = "Front End"
+        )) AND (SKILL_CODE & (
+            SELECT SUM(CODE) FROM SKILLCODES
+            WHERE NAME = "Python"
+        ))) THEN "A"
+        WHEN (SKILL_CODE & (
+            SELECT SUM(CODE) FROM SKILLCODES
+            WHERE NAME = "C#"
+        )) THEN "B"
+        WHEN (SKILL_CODE & (
+            SELECT SUM(CODE) FROM SKILLCODES
+            WHERE CATEGORY = "Front End"
+        )) THEN "C"
+        ELSE NULL
+    END AS GRADE
+    FROM DEVELOPERS
+) AS RESULT
+WHERE RESULT.GRADE IS NOT NULL
+ORDER BY RESULT.GRADE ASC, RESULT.ID ASC;
