@@ -1,0 +1,1 @@
+const solution = (a, b) => a.map((x, i) => x.map((c, j) => c + b[i][j]));
