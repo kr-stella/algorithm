@@ -1,0 +1,1 @@
+const solution = v => (v.split(` `).map(a => [...a].map((b, i) => (i % 2)? b.toLowerCase():b.toUpperCase()).join(``)).join(` `));
