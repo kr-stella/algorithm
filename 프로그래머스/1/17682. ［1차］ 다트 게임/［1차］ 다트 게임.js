@@ -14,7 +14,7 @@ const solution = str => {
     const regex = /\d{1,2}[SDT]{1}[*#]?/gi;
     // console.log(str.match(regex));
     const score = [];
-    str.match(regex).map((a, i) => {
+    str.match(regex).forEach((a, i) => {
         
         // 이렇게 처리하면 "10S*" 이게 처리가 안됨
         // let [ number, bonus, option ] = a;
