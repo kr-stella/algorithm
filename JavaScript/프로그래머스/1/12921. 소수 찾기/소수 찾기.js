@@ -61,7 +61,7 @@ function solution(n) {
 
 const isPrime = (v) => {
     
-    for(let i=2; i<=Math.sqrt(v); i++)
+    for(let i=2; i * i < v; i++)
         if(v % i === 0) 
             return false;
     
