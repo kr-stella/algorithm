@@ -2,7 +2,7 @@ const solution = s => {
     
     /** 단순 문자열로 처리하는 경우 */
     let [ res, cnt, str ] = [ 0, 0, `` ];
-    for(const v of s) {
+    for(let v of s) {
         /** cnt가 0이라면 첫 글자 OR 분리한 후 첫 글자를 설정하고 결과를 세야 함. */
         if(cnt === 0) {
             str = v;
