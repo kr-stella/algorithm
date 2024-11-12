@@ -3,8 +3,13 @@ import java.util.stream.*;
 
 class Solution {
     public double solution(int[] numbers) {
-        // System.out.println(IntStream.of(numbers).average());
-        // System.out.println(IntStream.of(numbers).average().getAsDouble());
-        return IntStream.of(numbers).average().getAsDouble();
+
+        double sum = 0;
+        for(int number : numbers)
+            sum += number;
+        
+        return sum / numbers.length;
+        // return IntStream.of(numbers).average().getAsDouble();
+
     }
 }
