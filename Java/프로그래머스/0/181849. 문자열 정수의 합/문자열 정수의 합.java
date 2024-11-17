@@ -1,3 +1,5 @@
+// import java.util.stream.*;
+
 class Solution {
     public int solution(String str) {
         
@@ -6,6 +8,7 @@ class Solution {
             answer += Integer.parseInt(v);
         
         return answer;
+        // return Stream.of(str.split("")).mapToInt(Integer::parseInt).sum();
         
     }
 }
