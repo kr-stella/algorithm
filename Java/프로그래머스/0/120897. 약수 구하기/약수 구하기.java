@@ -6,6 +6,7 @@ import java.util.Map.Entry;
 class Solution {
     public int[] solution(int n) {
         
+        /** T2 */
         Set<Integer> set = new HashSet<>();
         /** 본인들 */
         set.add(1); set.add(n);
@@ -21,6 +22,7 @@ class Solution {
         
         return result;
         
+        /** T1 */
 //         List<Integer> list = new ArrayList<>();
 //         /** 본인들 */
 //         // list.add(1); list.add(n); >> 이렇게 하면 n이 1일때가 안됨
@@ -38,6 +40,10 @@ class Solution {
 //         Arrays.sort(result);
 //         // System.out.println(test);
 //         return result;
+        
+        
+        
+        
         
 //         // int[] test = list.stream().mapToInt(Integer::intValue).toArray();
 //         // System.out.println(test);
