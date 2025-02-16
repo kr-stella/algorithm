@@ -14,7 +14,7 @@ class Solution {
         // int[] t2 = s2.stream().mapToInt(Integer::intValue).toArray();
         
         // return result.stream().map(a -> String.valueOf(a)).toArray();
-        return result.stream().peek(System.out::println).toArray(String[]::new);
+        return result.stream().toArray(String[]::new);
         
     }
 }
