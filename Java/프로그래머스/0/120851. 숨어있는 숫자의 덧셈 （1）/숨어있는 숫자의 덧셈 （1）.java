@@ -10,7 +10,7 @@ class Solution {
         Matcher matcher = pattern.matcher(my_string);
         while(matcher.find()) {
             answer += Integer.parseInt(matcher.group());
-            System.out.println(matcher.group());
+            // System.out.println(matcher.group());
         }
             
         
