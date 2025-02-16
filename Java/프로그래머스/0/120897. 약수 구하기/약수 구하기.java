@@ -1,32 +1,41 @@
 import java.util.*;
 import java.util.stream.*;
-import java.util.AbstractMap.SimpleEntry;
-import java.util.Map.Entry;
 
 class Solution {
     public int[] solution(int n) {
         
+        IntStream.of(1, 2, 3, 4).forEach(System.out::println);
+        IntStream.of(1, 2, 3, 4).peek(System.out::println);
+        IntStream.of(1, 2, 3, 4).peek(System.out::println).sum();
+        System.out.println(IntStream.of(1, 2, 3, 4));
+        
         /** T3 */
+        return IntStream.rangeClosed(1, (int) Math.sqrt(n))
+                .filter(i -> n % i == 0)
+                .flatMap(i -> i * i == n ? IntStream.of(i) : IntStream.of(i, n / i))
+                // .peek(x -> System.out.println("Item: " + x))
+                .sorted()
+                // .peek(x -> System.out.println("Sorted: " + x))
+                .toArray();
         
         
+//         /** T2 */
+//         Set<Integer> set = new HashSet<>();
+//         /** 본인들 */
+//         set.add(1); set.add(n);
+//         for(int i = 1; i <= (int) Math.sqrt(n); i++) {
+//             if(n % i == 0) {
+//                 set.add(i);
+//                 set.add((int) n / i);
+//             }
+//         }
         
-        /** T2 */
-        Set<Integer> set = new HashSet<>();
-        /** 본인들 */
-        set.add(1); set.add(n);
-        for(int i = 1; i <= (int) Math.sqrt(n); i++) {
-            if(n % i == 0) {
-                set.add(i);
-                set.add((int) n / i);
-            }
-        }
+// //         int[] result = set.stream().sorted().mapToInt(Integer::intValue).toArray();
+// //         Arrays.sort(result);
         
-//         int[] result = set.stream().sorted().mapToInt(Integer::intValue).toArray();
-//         Arrays.sort(result);
+// //         return result;
         
-//         return result;
-        
-        return set.stream().sorted().mapToInt(Integer::intValue).toArray();
+//         return set.stream().sorted().mapToInt(Integer::intValue).toArray();
         
 //         /** T1 */
 //         List<Integer> list = new ArrayList<>();
@@ -42,10 +51,11 @@ class Solution {
 //             }
 //         }
         
-//         int[] result = list.stream().mapToInt(Integer::intValue).toArray();
-//         Arrays.sort(result);
-//         // System.out.println(test);
-//         return result;
+//         // int[] result = list.stream().mapToInt(Integer::intValue).toArray();
+//         // Arrays.sort(result);
+//         // // System.out.println(test);
+//         // return result;
+//         return list.stream().sorted().mapToInt(Integer::intValue).toArray();
         
     }
 }
