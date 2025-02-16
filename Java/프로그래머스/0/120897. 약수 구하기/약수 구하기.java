@@ -4,19 +4,31 @@ import java.util.stream.*;
 class Solution {
     public int[] solution(int n) {
         
-        IntStream.of(1, 2, 3, 4).forEach(System.out::println);
-        IntStream.of(1, 2, 3, 4).peek(System.out::println);
-        IntStream.of(1, 2, 3, 4).peek(System.out::println).sum();
-        System.out.println(IntStream.of(1, 2, 3, 4));
-        
-        /** T3 */
+        /** T4 */
         return IntStream.rangeClosed(1, (int) Math.sqrt(n))
                 .filter(i -> n % i == 0)
-                .flatMap(i -> i * i == n ? IntStream.of(i) : IntStream.of(i, n / i))
+                .flatMap(i -> IntStream.of(i, n / i))
+                .distinct()
                 // .peek(x -> System.out.println("Item: " + x))
                 .sorted()
                 // .peek(x -> System.out.println("Sorted: " + x))
                 .toArray();
+        
+        
+        
+        // IntStream.of(1, 2, 3, 4).forEach(System.out::println);
+        // IntStream.of(1, 2, 3, 4).peek(System.out::println);
+        // IntStream.of(1, 2, 3, 4).peek(System.out::println).sum();
+        // System.out.println(IntStream.of(1, 2, 3, 4));
+        
+        /** T3 */
+        // return IntStream.rangeClosed(1, (int) Math.sqrt(n))
+        //         .filter(i -> n % i == 0)
+        //         .flatMap(i -> i * i == n ? IntStream.of(i) : IntStream.of(i, n / i))
+        //         // .peek(x -> System.out.println("Item: " + x))
+        //         .sorted()
+        //         // .peek(x -> System.out.println("Sorted: " + x))
+        //         .toArray();
         
         
 //         /** T2 */
@@ -37,6 +49,8 @@ class Solution {
         
 //         return set.stream().sorted().mapToInt(Integer::intValue).toArray();
         
+        
+        
 //         /** T1 */
 //         List<Integer> list = new ArrayList<>();
 //         /** 본인들 */
@@ -53,7 +67,7 @@ class Solution {
         
 //         // int[] result = list.stream().mapToInt(Integer::intValue).toArray();
 //         // Arrays.sort(result);
-//         // // System.out.println(test);
+//         // // System.out.println(result);
 //         // return result;
 //         return list.stream().sorted().mapToInt(Integer::intValue).toArray();
         
