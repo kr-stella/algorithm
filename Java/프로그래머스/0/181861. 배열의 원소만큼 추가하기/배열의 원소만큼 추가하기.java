@@ -4,11 +4,26 @@ import java.util.stream.*;
 class Solution {
     public int[] solution(int[] arr) {
         
-        // IntStream.of(arr).forEach(System.out::println);
-        // IntStream.of(a).rangeClosed(0, a - 1).map(i -> a);
+        /** T2 */
+        int pos = 0;
+        int[] result = new int[Arrays.stream(arr).sum()];
+        for(int v : arr) {
+            Arrays.fill(result, pos, pos + v, v);
+            pos += v;
+        }
+        
+        return result;
         
         
-        return IntStream.of(arr).flatMap(a -> IntStream.rangeClosed(0, a - 1).map(i -> a)).toArray();
+        /** T1 */
+        // return IntStream.of(arr).flatMap(a -> IntStream.rangeClosed(0, a - 1).map(i -> a)).toArray();
+        
+        
+        
+        
+        
+        
+        
         
         // List<Integer> list = new ArrayList<>();
         // for(int v : arr) {
