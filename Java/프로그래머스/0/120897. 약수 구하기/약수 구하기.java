@@ -6,6 +6,10 @@ import java.util.Map.Entry;
 class Solution {
     public int[] solution(int n) {
         
+        /** T3 */
+        
+        
+        
         /** T2 */
         Set<Integer> set = new HashSet<>();
         /** 본인들 */
@@ -17,12 +21,14 @@ class Solution {
             }
         }
         
-        int[] result = set.stream().mapToInt(Integer::intValue).toArray();
-        Arrays.sort(result);
+//         int[] result = set.stream().sorted().mapToInt(Integer::intValue).toArray();
+//         Arrays.sort(result);
         
-        return result;
+//         return result;
         
-        /** T1 */
+        return set.stream().sorted().mapToInt(Integer::intValue).toArray();
+        
+//         /** T1 */
 //         List<Integer> list = new ArrayList<>();
 //         /** 본인들 */
 //         // list.add(1); list.add(n); >> 이렇게 하면 n이 1일때가 안됨
@@ -40,54 +46,6 @@ class Solution {
 //         Arrays.sort(result);
 //         // System.out.println(test);
 //         return result;
-        
-        
-        
-        
-        
-//         // int[] test = list.stream().mapToInt(Integer::intValue).toArray();
-//         // System.out.println(test);
-        
-//         // System.out.println(test);
-//         // IntStream.of(test).forEach(System.out::println);
-        
-//         // System.out.println(Arrays.sort());
-//         // list.stream().mapToInt(Integer::intValue).sort();
-//             // .forEach(System.out::println);
-        
-//         // System.out.println(list);
-//         // int[] abc = new int[]{ 1, 1 };
-//         int[] test = list.stream().mapToInt(Integer::intValue).toArray();
-//         Arrays.sort(test);
-//         // System.out.println(test);
-//         return test;
-//         // return Arrays.sort(test);
-        
-        // List<Entry<Integer, Integer>> divisors = IntStream.rangeClosed(1, (int) Math.sqrt(n))
-        //         .filter(a -> n % a == 0)
-        //         .mapToObj(b -> new SimpleEntry<>(b, n / b))  // 각 약수 b에 대해 SimpleEntry 생성
-        //         .collect(Collectors.toList());
-        // // return IntStream.rangeClosed(1, (int) Math.sqrt(n)).filter(a -> n % a == 0)
-        // //     .mapToObj(b -> new SimpleEntry<>(b, n / b))
-        // //         .collect(Collectors.toList());
-        // divisors.forEach(entry -> System.out.println("Divisor: " + entry.getKey() + ", Quotient: " + entry.getValue()));
-        // return answer;
-        
-//         // ㅣㅑㄴ
-//         int[] answer = {};
-//         List<Integer> list = new ArrayList<>();
-//         // System.out.println((int) Math.sqrt(n));
-        
-//         // IntStream.rangeClosed(1, Integer.parseInt(String.valueOf(Math.sqrt(n)).split("\\.")[0])).forEach(System.out::println);
-//         List<Entry<Integer, Integer>> divisors = IntStream.rangeClosed(1, (int) Math.sqrt(n))
-//                 .filter(a -> n % a == 0)
-//                 .mapToObj(b -> new SimpleEntry<>(b, n / b))  // 각 약수 b에 대해 SimpleEntry 생성
-//                 .collect(Collectors.toList());
-//         // return IntStream.rangeClosed(1, (int) Math.sqrt(n)).filter(a -> n % a == 0)
-//         //     .mapToObj(b -> new SimpleEntry<>(b, n / b))
-//         //         .collect(Collectors.toList());
-//         divisors.forEach(entry -> System.out.println("Divisor: " + entry.getKey() + ", Quotient: " + entry.getValue()));
-//         return answer;
         
     }
 }
