@@ -1,10 +1,10 @@
 # [level 0] 대문자와 소문자 - 120893 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/120893?language=java) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/120893) 
 
 ### 성능 요약
 
-메모리: 84 MB, 시간: 4.83 ms
+메모리: 85.9 MB, 시간: 3.74 ms
 
 ### 구분
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2024년 11월 17일 17:32:15
+2025년 02월 16일 11:05:42
 
 ### 문제 설명
 
