@@ -1,10 +1,10 @@
 # [level 0] 가장 큰 수 찾기 - 120899 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/120899?language=java) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/120899) 
 
 ### 성능 요약
 
-메모리: 74.6 MB, 시간: 0.02 ms
+메모리: 75 MB, 시간: 1.44 ms
 
 ### 구분
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2024년 11월 17일 17:38:43
+2025년 02월 16일 15:59:17
 
 ### 문제 설명
 
