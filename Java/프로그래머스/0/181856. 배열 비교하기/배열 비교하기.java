@@ -12,6 +12,13 @@ class Solution {
             int sum1 = IntStream.of(arr1).sum();
             // int sum2 = IntStream.of(arr2).reduce(0, (a, b) -> a + b);
             int sum2 = IntStream.of(arr2).reduce((a, b) -> a + b).getAsInt();
+            
+            // int a1 = 0, b1 = 0;
+            // for(int a : arr1)
+            //     a1 += a;
+            // for(int b : arr2)
+            //     b1 += b;
+            
             if(sum1 > sum2) return 1;
             else if(sum1 == sum2) return 0;
             else return -1;
